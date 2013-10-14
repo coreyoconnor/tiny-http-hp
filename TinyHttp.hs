@@ -9,10 +9,10 @@ import Control.Monad
 
 import qualified Data.ByteString as BS
 import Data.Either
-import Data.Text
-import Data.Text.Encoding
+import Data.Text (pack)
+import Data.Text.Encoding (encodeUtf8)
 
-import Network ( listenOn, PortID(..), PortNumber )
+import Network (listenOn, PortID(..), PortNumber)
 import Network.HTTP
 import Network.Socket
 import Network.Stream
